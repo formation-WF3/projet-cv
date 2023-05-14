@@ -1,0 +1,386 @@
+@font-face {
+	font-family: 'acari-sans';
+	src: url('police/acari-sans/AcariSans-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'acari-sans';
+	src: url('police/acari-sans/AcariSans-Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'acari-sans';
+	src: url('police/acari-sans/AcariSans-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'acari-sans';
+	src: url('police/acari-sans/AcariSans-BoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: bold;
+}
+
+.acari-sans {
+    font-family: 'acari-sans';
+}
+
+.text-primary {
+    color: #15697D;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1, h2 {
+    font-family: 'acari-sans', sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-indent: 12px;
+    letter-spacing: 1px;
+}
+
+ul {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* header */
+.header {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    height: 160px;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.nav-item a.nav-link {
+    padding: 4px 5px 0;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'acari-sans', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.nav-item a.nav-link:hover {
+    background-color: white;
+    color: #15697D;
+    transition: all 1s ease-out;
+}
+
+.nav-item a.nav-link.active {
+    color: orange;
+}
+
+/* section contact */
+.section-contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 20px 10px;
+}
+
+.section-contact address {
+    font-style: normal;
+}
+
+.section-contact address a[href^="mailto:"] {
+    text-decoration: none;
+    color: #6495ed;
+}
+
+/* about me */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section h1 {
+    letter-spacing: 2px;
+}
+
+section .presentation {
+    width: 90%;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+section .presentation p {
+    margin-bottom: 10px;
+}
+
+/* section cv */
+.section-cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.section-cv .section-content {
+    margin-top: 10px;
+}
+
+.section-cv p {
+    margin: auto;
+}
+.chronologie {
+    border-spacing: 20px 15px;
+}
+
+.chronologie .chronologie-date {
+    text-align: right;
+    vertical-align: baseline;
+    width: 100px;
+}
+
+.chronologie-skills {
+    list-style-type: square;
+}
+
+.technical-summary {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+/** CONTACT **/
+
+/* player */
+.player-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.ecoute-music {
+    margin-bottom: 0;
+    padding: 5px 6px 3px;
+    border-radius: 6px;
+    background: linear-gradient(0.25turn, green 0%, red 100%);
+    color: white;
+}
+
+.audio-player {
+    margin: auto;
+}
+
+.form-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.form-contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.form-group label {
+    width: 100px;
+    font-family: 'acari-sans';
+    font-weight: bold;
+}
+
+.form-group.mandatory label:after {
+    padding-left: 5px;
+    content: "*";
+    color: red;
+}
+
+.form-control {
+    background-color: #F5F5F5;
+    width: calc(84% - 100px);
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    font-family: 'acari-sans';
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn:active {
+    border: 2px solid blue;
+}
+
+.btn-envoyer {
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-annuler {
+    background-color: red;
+}
+
+.btn-envoyer:hover {
+    background-color: #DDDDDD;
+    color: darkgreen;
+}
+
+.btn-annuler:hover {
+    background-color: #444444;
+    color: red;
+}
+
+/** SITES **/
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    gap: 40px 25px;
+}
+
+.gallery .petites-images {
+    align-items: center;
+    text-align: center;
+    width: 240px;
+    height: auto;
+}
+
+.petites-images .img-to-site {
+    width: 60%;
+}
+
+.petites-images .img-to-site:hover {
+    animation: rotating 1.5s linear infinite;
+}
+
+/* utilitaire */
+.bg-primary {
+    color: white;
+    background-color: #15697D;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.columns-2 {
+    column-count: 2;
+}
+
+.emphasis {
+    font-family: 'acari-sans', serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 575px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 0.9rem;
+    }
+
+    .navbar .navbar-brand img {
+        width: 40px;
+        height: auto;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        font-size: 0.7rem;
+    }
+
+    .columns-2 {
+        column-count: 1;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 100%;
+        row-gap: 10px;
+    }
+
+    .footer {
+        height: 40px;
+    }
+}
