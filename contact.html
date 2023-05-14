@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projet-html-css</title>
-    <link rel="stylesheet" type="text/css" href="styles-projet-html-css-pageContact.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header class="header bg-primary">
@@ -27,9 +27,8 @@
     </nav>
 </header>
 
-    <section>
-
-        <h1>Contact</h1>
+<section class="section">
+    <h1>Contact</h1>
 
     <div class="player-container">
         <p class="ecoute-music">Ecoutez pendant que vous remplissez le formulaire.</p>
@@ -39,8 +38,39 @@
     </div>
 </section>
 
-    <footer>
-        <p>&copy; 2023 Gilles. All Rights Reserved.</p>
-    </footer>
+<section class="form-contact">
+    <form action="#" method="POST">
+
+        <div class="form-group mandatory">
+            <label for="pseudo">Pseudo</label>
+            <input class="form-control" type="text" id="pseudo" name="pseudo" minlength="5" required>
+        </div>
+
+        <div class="form-group mandatory">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="objet">Objet</label>
+            <input class="form-control" type="text" id="objet" name="objet" minlength="6" required>
+        </div>
+
+        <div class="form-group mandatory">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <a class="btn btn-envoyer" href="index.html">Envoyer</a>
+            <button class="btn btn-annuler" type="reset">Effacer</button>
+        </div>
+
+    </form>
+</section>
+
+<footer class="footer bg-primary">
+    <p>&copy; 2023 Gilles. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
