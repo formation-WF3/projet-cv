@@ -24,7 +24,7 @@
 }
 
 .acari-sans {
-    font-family: 'acari-sans';
+    font-family: 'acari-sans', 'sans-serif';
 }
 
 .text-primary {
@@ -232,7 +232,7 @@ section .presentation p {
 
 .form-group label {
     width: 100px;
-    font-family: 'acari-sans';
+    font-family: 'acari-sans', 'sans-serif';
     font-weight: bold;
 }
 
@@ -251,7 +251,7 @@ section .presentation p {
     padding: 10px;
     border: none;
     border-radius: 12px;
-    font-family: 'acari-sans';
+    font-family: 'acari-sans', 'sans-serif';
     font-weight: bold;
     font-size: 0.8em;
     letter-spacing: 1px;
